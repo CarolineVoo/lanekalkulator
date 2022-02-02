@@ -1,0 +1,48 @@
+.container-belop,
+.container-periode {
+    position: relative;
+    width: 650px;
+    margin: 50px auto 0 auto;
+    text-align: left;
+
+}
+
+input[type="range"] {
+    width: 70%;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    color: #4a4a4a;
+}
+
+.result {
+    /* display: inline-block; */
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 25%;
+    border: 1px solid #ccc;
+    color: #4a4a4a;
+    border-radius: 5px;
+    padding: 5px 0px 5px 15px;
+}
+
+.result-type {
+    font-weight: bold;
+    padding-left: 6px;
+    padding-right: 10px;
+    border-left: 1px solid #ccc;;
+    position: absolute;
+    right: 0px;
+}
+
+.container-manedlig-belop {
+    margin-top: 50px;
+    padding:30px;
+    background-color: rgb(145, 167, 145);
+}
+
+

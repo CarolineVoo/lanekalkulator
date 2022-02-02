@@ -1,0 +1,31 @@
+<div>
+    <div class="container-belop">
+        <label for="belop">
+            Ønsket lånebeløp:
+        </label>
+        <input id="belop" type="range" 
+        step="100000" [min]="minBelop" [max]="maxBelop" 
+        [ngModel]="belop"
+        [value]="belop" 
+        (ngModelChange)="onChangeBelop($event)">
+        <span class="result">{{belop}} <span class="result-type">kr</span></span>
+    </div>
+
+    <div class="container-periode">
+        <label for="periode">
+            Ønsket låneperiode:
+        </label>
+        <input id="periode" type="range" 
+        step="1" [min]="0" [max]="30" 
+        [ngModel]="periode"
+        [value]="periode" 
+        (ngModelChange)="onChangePeriode($event)">
+        <span class="result">{{periode}} <span class="result-type">år</span></span>
+    </div>
+
+    <div class="container-manedlig-belop">
+        Månedlige beløp: {{manedligBelop}}
+    </div>
+
+
+</div>
