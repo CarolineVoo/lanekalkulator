@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { GlobalService } from 'src/services/global.service';
 
 
 @Component({
@@ -21,13 +22,14 @@ export class SliderComponent implements OnInit {
   }
   set value(value) {
     this._value = value;
+    this.displayValue = this.globalService.numberWithSpaces(this._value);
     this.valueChange.emit(this._value);
   }
 
   _value: number;
+  displayValue: string;
   
-
-  constructor() { }
+  constructor(private globalService: GlobalService) { }
 
   ngOnInit(): void {}
 

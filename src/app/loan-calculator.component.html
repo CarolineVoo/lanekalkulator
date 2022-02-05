@@ -16,7 +16,7 @@
                 [(value)]="amount"
                 [min]="0" 
                 [max]="10000000" 
-                [step]="10000"
+                [step]="100000"
                 [suffix]="'kr'"
                 (valueChange)="onChangeLoan()">
             </slider>
@@ -34,7 +34,7 @@
         </div>
 
         <div class="container-monthly-loan">
-            Månedlige beløp: {{monthlyAmount}}
+            Månedlige beløp: {{displayMonthlyAmount}}
         </div>
 
 </div>

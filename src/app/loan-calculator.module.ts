@@ -5,6 +5,7 @@ import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { LoanCalculatorComponent } from './loan-calculator.component';
 import { SliderComponent } from './slider/slider.component';
+import { GlobalService } from '../services/global.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { SliderComponent } from './slider/slider.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [GlobalService],
   bootstrap: [LoanCalculatorComponent]
 })
 export class AppModule { }
