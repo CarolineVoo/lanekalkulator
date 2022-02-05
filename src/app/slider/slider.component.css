@@ -1,5 +1,5 @@
-.container-belop,
-.container-periode {
+
+.container {
     position: relative;
     width: 650px;
     margin: 50px auto 0 auto;
@@ -18,7 +18,7 @@ label {
     color: #4a4a4a;
 }
 
-.result {
+.value {
     /* display: inline-block; */
     position: absolute;
     right: 0;
@@ -30,7 +30,7 @@ label {
     padding: 5px 0px 5px 15px;
 }
 
-.result-type {
+.suffix {
     font-weight: bold;
     padding-left: 6px;
     padding-right: 10px;
@@ -39,10 +39,5 @@ label {
     right: 0px;
 }
 
-.container-manedlig-belop {
-    margin-top: 50px;
-    padding:30px;
-    background-color: rgb(145, 167, 145);
-}
 
 

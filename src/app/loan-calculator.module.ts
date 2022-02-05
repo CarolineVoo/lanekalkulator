@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { LanekalkulatorComponent } from './lanekalkulator/lanekalkulator.component';
+import { LoanCalculatorComponent } from './loan-calculator.component';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LanekalkulatorComponent
+    LoanCalculatorComponent,
+    SliderComponent,
   ],
   imports: [
     FormsModule,
@@ -17,6 +17,6 @@ import { LanekalkulatorComponent } from './lanekalkulator/lanekalkulator.compone
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [LoanCalculatorComponent]
 })
 export class AppModule { }

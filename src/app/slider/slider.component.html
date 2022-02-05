@@ -1,0 +1,15 @@
+
+<div class="container">
+    <label [for]="id">
+        {{title}}:
+    </label>
+    <input 
+        [id]="id" 
+        type="range" 
+        [step]="step" 
+        [min]="min" 
+        [max]="max" 
+        [ngModel]="value"
+        (ngModelChange)="onChangeValue($event)">
+    <span class="value">{{value}}<span class="suffix">{{suffix}}</span></span>
+</div>

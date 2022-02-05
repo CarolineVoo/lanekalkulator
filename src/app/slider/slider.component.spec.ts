@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LanekalkulatorComponent } from './lanekalkulator.component';
+import { SliderComponent } from './slider.component';
 
-describe('LanekalkulatorComponent', () => {
-  let component: LanekalkulatorComponent;
-  let fixture: ComponentFixture<LanekalkulatorComponent>;
+describe('SliderComponent', () => {
+  let component: SliderComponent;
+  let fixture: ComponentFixture<SliderComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LanekalkulatorComponent ]
+      declarations: [ SliderComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LanekalkulatorComponent);
+    fixture = TestBed.createComponent(SliderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

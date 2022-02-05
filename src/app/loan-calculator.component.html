@@ -1,0 +1,40 @@
+<div class="container">
+    <h2>Lånekalkulator</h2>
+    
+    <p>Et gratis verktøy for å få oversikt over lån og kostnader. <br> 
+        Med lånekalkulatoren vår kan du enkelt beregne hvor mye boliglånet 
+        vil koste eller hvor mye du kan låne.</p>
+    
+        <p>Renten ligger nå på 
+        <span *ngIf="rente"> <strong>{{rente}}</strong></span>
+        </p>
+
+        <div>
+            <slider
+                [id]="'amount'"
+                [title]="'Ønsket beløp'" 
+                [(value)]="amount"
+                [min]="0" 
+                [max]="10000000" 
+                [step]="10000"
+                [suffix]="'kr'"
+                (valueChange)="onChangeLoan()">
+            </slider>
+
+            <slider
+                [id]="'period'"
+                [title]="'Ønsket låneperiode'" 
+                [(value)]="period"
+                [min]="1" 
+                [max]="30" 
+                [step]="1"
+                [suffix]="'år'"
+                (valueChange)="onChangeLoan()">
+            </slider>
+        </div>
+
+        <div class="container-monthly-loan">
+            Månedlige beløp: {{monthlyAmount}}
+        </div>
+
+</div>
