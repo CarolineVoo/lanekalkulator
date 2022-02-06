@@ -1,18 +1,15 @@
 <div class="container">
-    <h2>Lånekalkulator</h2>
-    
-    <p>Et gratis verktøy for å få oversikt over lån og kostnader. <br> 
-        Med lånekalkulatoren vår kan du enkelt beregne hvor mye boliglånet 
-        vil koste eller hvor mye du kan låne.</p>
-    
-        <p>Renten ligger nå på 
-        <span *ngIf="rente"> <strong>{{rente}}</strong></span>
-        </p>
-
-        <div>
+        <div class="box-loan-calculator">
+            <h2>Lånekalkulator</h2>
+            <p>Et gratis verktøy for å få oversikt over lån og kostnader. <br> 
+                Med lånekalkulatoren vår kan du enkelt beregne hvor mye boliglånet 
+                vil koste eller hvor mye du kan låne.</p>
+            
+            <!-- <p>Renten ligger nå på  <span *ngIf="rente"> <strong>{{rente}}</strong></span></p> -->
+            
             <slider
                 [id]="'amount'"
-                [title]="'Ønsket beløp'" 
+                [title]="'Lånebeløp'" 
                 [(value)]="amount"
                 [min]="0" 
                 [max]="10000000" 
@@ -23,7 +20,7 @@
 
             <slider
                 [id]="'period'"
-                [title]="'Ønsket låneperiode'" 
+                [title]="'Nedbetalingstid'" 
                 [(value)]="period"
                 [min]="1" 
                 [max]="30" 
@@ -33,8 +30,28 @@
             </slider>
         </div>
 
-        <div class="container-monthly-loan">
-            Månedlige beløp: {{displayMonthlyAmount}}
+        <div class="box-monthly-loan">
+            <h3>Hva koster lånet?</h3>
+            <div class="result-loan">
+                <div class="text-loan">Månedsbeløp:</div>
+                <span class="text-result-loan">{{displayMonthlyAmount}} kr</span>
+
+                <div class="selected-info">
+                    <div class="box-info">
+                        <span class="info-label">Lånebeløp:</span>
+                        <span class="info-result">{{amount}} kr</span> 
+                    </div>
+                   <div class="box-info">
+                        <span class="info-label">Låneperiode:</span>
+                        <span class="info-result">{{period}} år</span>
+                   </div>
+                   <div class="box-info">
+                        <span class="info-label">Rente:</span>
+                        <span class="info-result">{{rente}}</span>
+                   </div> 
+                </div>
+                
+            </div>
         </div>
 
 </div>

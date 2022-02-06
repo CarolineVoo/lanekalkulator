@@ -11,7 +11,7 @@ export class LoanCalculatorComponent implements OnInit {
   period: number;
   monthlyAmount: number;
   displayMonthlyAmount: string;
-  rente = "2%"
+  rente = "2.0%"
 
   constructor(private globalService: GlobalService) { }
 

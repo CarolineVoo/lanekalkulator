@@ -1,22 +1,30 @@
 
 .container {
     position: relative;
-    width: 650px;
-    margin: 50px auto 0 auto;
+    width: 75%;
+    margin: 40px auto 0 auto;
     text-align: left;
 
 }
 
+.line-seperate {
+    display: block;
+    width: 100%;
+    border: 0.1px solid #f0f0f0;
+    background-color: #f0f0f0;
+    margin: 0 auto 25px auto;
+}
+
 
 .slider {
--webkit-appearance: none;
-width: 70%;
-height: 8px;
-border-radius: 20px;
-background: #d3d3d3;
-outline: none;
-opacity: 0.7;
-transition: opacity .2s;
+    margin-top: 20px;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 20px;
+    background: #dfdfdf;
+    outline: none;
+    transition: opacity .2s;
 }
 
   
@@ -27,7 +35,7 @@ border-radius: 50px;
 appearance: none;
 width: 23px;
 height: 23px;
-background: #04AA6D;
+background: #395896;
 cursor: pointer;
 }
 
@@ -35,22 +43,36 @@ cursor: pointer;
 label {
     display: block;
     text-align: left;
-    font-size: 15px;
+    font-size: 13px;
     color: #4a4a4a;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
+
 .value {
-    /* display: inline-block; */
+    position: absolute;
+    right: 0;
+    top: 20px;
+    font-weight: bold;
+} 
+
+.suffix {
+    font-weight: bold;
+}
+
+/* .value {
     position: absolute;
     right: 0;
     top: 10px;
-    width: 25%;
+    width: 22%;
     border: 1px solid #ccc;
     color: #4a4a4a;
     border-radius: 5px;
     padding: 5px 0px 5px 15px;
-}
+} */
 
+/*
 .suffix {
     font-weight: bold;
     padding-left: 6px;
@@ -59,6 +81,10 @@ label {
     position: absolute;
     right: 0px;
 }
+
+*/
+
+
 
 
 
